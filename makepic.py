@@ -1,3 +1,4 @@
+import random
 cols = 750 #number of columns(up to down) and measured left to right
 rows = 750#number of rows(left to right) and measured up to down
 max = 255
@@ -16,6 +17,10 @@ def genImage(f):
             red = 0
             g = 0
             b = 0
+            if random.randrange(10) == 5:
+                red = random.randrange(255)
+                g = random.randrange(255)
+                b = random.randrange(255)
             if c <= 250:
                 red = 255
             elif c <= 500:
